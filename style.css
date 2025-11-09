@@ -1,0 +1,288 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #111827;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: antiquewhite;
+  align-items: center;
+  background-color:#123c7b; /* soft pastel background */
+  padding: 20px 80px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid wheat;
+}
+
+/* Logo text */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: antiquewhite;;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #F9FAFB;;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #6c63ff; /* purple hover */
+}
+
+/* Join Button */
+.join-btn {
+  background-color: #6c63ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #5146d9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#heading {
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+}
+button{
+    font-weight: bold;
+    background-color: #1F2937;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    size: 1000px;
+}
+button:hover{
+    background-color: #b3b960;
+}
+img{
+    width: 100%;
+    height: 500px;
+}
+.online:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+
+}
+.online{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.online img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.search-input {
+  width: 80%;
+  max-width: 400px;
+  padding: 12px 18px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* Study list style */
+.session-list {
+  list-style: none;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+  padding: 0;
+}
+
+.session-list li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.session-list li:hover {
+  background-color: #f0edff;
+}
+
+.first {
+  background-image: url(https://i.pinimg.com/1200x/e5/44/6e/e5446efbdff2e7efa55381ae50cc853c.jpg);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;  /* centers horizontally */
+  align-items: flex-start;    /* pushes content to bottom */
+   
+  color: #293b61;
+  position: relative;
+  padding: 5px;     /* gives some space from the bottom */
+}
+
+.first div {
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 90%;
+  height: 18%;
+  text-align: center;
+}
+
+/* .second{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.second div{
+  height: 50px;
+  width: 250px;
+} */
+
+.second {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* adds consistent spacing between boxes */
+  padding: 40px 20px;
+  border-radius:10px;
+  background-color: #F9FAFB; /* light background for contrast */
+}
+
+.second button {
+  height: 70px;
+  width: 250px;
+  background-color: rgba(59, 130, 246, 0.1); /* soft blue tint */
+  border: 2px solid #3B82F6; /* main blue border */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #1F2937;
+  transition: all 0.3s ease;
+  border: 2px solid black;
+  height: 300px;
+  width: 260px;
+  position: relative;
+}
+
+.second div:hover {
+  background-color: #3B82F6;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.second button img{
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top:0px;
+}
+.second button h3{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.third {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* adds consistent spacing between boxes */
+  padding: 40px 20px;
+  border-radius:10px;
+  background-color: #F9FAFB; /* light background for contrast */
+}
+.third button {
+  height: 70px;
+  width: 250px;
+  background-color: rgba(59, 130, 246, 0.1); /* soft blue tint */
+  border: 2px solid #3B82F6; /* main blue border */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #1F2937;
+  transition: all 0.3s ease;
+  border: 2px solid black;
+  height: 300px;
+  width: 260px;
+  position: relative;
+}
+.third div:hover {
+  background-color: #3B82F6;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.third button img{
+  height: 80%;
+  width: 100%;
+  position: absolute;
+  top:0px;
+}
+.third button h3{
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
